@@ -1,30 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
-        <link rel="stylesheet" href="Style.css">
-        <title>Fun Zone</title>
-    </head>
-    <body>
-        <header>
-             <h3 class = "Controls">
-                <div>
-                <a class="t1"href="">Rate-Site</a> 
-                <a class="t2"href="">Updates</a> 
-                <a class="t3"href="">Stories</a> 
-                <a class="t4"href="">Movies</a> 
-                <a class="t5"href="">Games</a>
-                <a class="t6"href="">Join-Community</a> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loogin</title>
+    <style>
+        *{
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            outline: none;
+        }
+        body{
+            background: url(../HTML/Media/Anime.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            min-height: 650px;
+        }
+        h1{
+            font-size: 45px;
+            text-align: center;
+        }
+        .Box1{
+            background-color: transparent;
+            outline: auto;
+            outline-color: purple;
+            outline-style: auto;
+            position: relative;
+            box-shadow: 0 0 10px purple;
+            backdrop-filter:blur(20px);
+            width: 400px;
+            height: 400px;
+
+        }
+        #User-info-Username{
+            width: 320px;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-left: 40px;
+            background-color: transparent;
+            outline: auto;
+        }
+        #User-info-Password{
+            width: 320px;
+            height: 35px;
+            border-radius: 30px;
+            margin-top:10px ;
+            background-color: transparent;
+            outline: auto;
+        }
+        .Box2{
+            margin-left:40px ;
+            margin-top: 10px;
+        }
+        .Box3{
+            margin-top: 15px;
+        }
+        .Box4{
+            margin-left: 70px;
+        }
+        button{
+            width: 200px;
+            height: 35px;
+            margin-left: 95px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        .Box3 a{
+            margin-left: 40px;
+        }
+        button a{
+            color: black;
+            font-size: 17px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        input{
+            padding-left: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box1">
+        <h1>Login</h1>
+        <input type="text" name="Username" id="User-info-Username" placeholder="Username">
+        <div class="Box2">
+            <input type="password" name="Password" id="User-info-Password" placeholder="Password">
+            <div>
+                <div class="Box3">
+                    <input type="checkbox" id="Check-Box"> Remember Me
+                    <a href="">Forgotten Password</a>
                 </div>
-            </h3> 
-        </header>
-        <img class = "img5" src="/Media/Bubble.jpeg">
-        <img class = "img1" src="/Media/Sam Fam AI.jpg">
-        <img class = "img3" src="/Media/Triangle.jpeg">
-        <h1 class ="Welcome">Welcome to Fun Zone the World of Entertainment</h1>
-        <h2 class = "welcome"><a href="">Explore!</a></h2>
-        <img class = "img2" src="/Media/Triangle.jpeg">
-        <img class = "img4" src="/Media/Bubble.jpeg">
-    </body>
+            </div>
+        </div>
+                <div class="Box 5">
+                    <button><a href="">Login</a></button>
+                </div>
+                    <div class="Box4">
+                        Don't have an account? <span id="Register"><a href="">Register</a></span>
+                    </div>
+    </div>
+</body>
 </html>
